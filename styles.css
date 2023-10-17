@@ -1,0 +1,5 @@
+.roundedBorder{
+    border-width:3px;
+    border-radius:5px;
+    border-color: solid black;
+}
