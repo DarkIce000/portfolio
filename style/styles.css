@@ -1,0 +1,16 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.roundedBorder{
+    border-width:3px;
+    border-radius:5px;
+    border-color: solid black;
+}
+
+
+:focus, :hover,:active{
+    text-decoration: none;
+    outline: 0 !important;
+    outline-offset: 0;
+}
