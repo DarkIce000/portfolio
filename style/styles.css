@@ -3,9 +3,9 @@ html{
 }
 
 .roundedBorder{
-    border-width:3px;
-    border-radius:5px;
-    border-color: solid black;
+    border-width:3px !important;
+    border-radius:10px !important;
+    border-color: solid black !important;
 }
 
 
