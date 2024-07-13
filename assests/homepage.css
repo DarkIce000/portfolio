@@ -1,0 +1,128 @@
+@import "bootstrap/bootstrap.css";
+@import url('font/web/inter.css');
+
+body{
+    font-family: InterVariable;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    align-content:center;
+    justify-content: center;
+    height:100vh;
+    width:100vw;
+    line-height: 1.1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        color: var(--bs-teal);
+    }
+}
+
+.card-text>span{
+    line-height: 2rem;
+}
+
+li{
+    list-style: none;
+    >a{
+        list-style: none;
+        font-size: 0.9rem;
+        color: var(--bs-light-text-emphasis);
+        &:hover{
+            color:white;
+        }
+    }
+}
+
+p{
+    color: var(--bs-light-text-emphasis);
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+h1{
+    font-weight:bold;
+    font-size: 4rem;
+    letter-spacing:-0.28rem;
+}
+
+.container-xxl{
+    margin:0;
+    padding:0;
+}
+
+.active::before{
+    content: "—";
+}
+
+.active{
+    color:white;
+}
+
+.card:hover{
+    background: rgba(123, 127, 135, 0.203);
+    border-color: rgba(0, 0, 0, 0.216);
+    border-top-color: rgba(255, 255, 255, 0.093);
+    box-shadow:4px rgba(20, 20, 20, 0.403);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(5.2px);
+    color: var(--bs-teal);
+}
+
+.card-title:hover span{
+    display:inline-flex;
+    transition: 0.2s ease-in;
+    translate: 5px -10px;
+}
+
+p>span{
+    background: rgba(0, 255, 119, 0.133);
+    border-radius: 16px;
+    box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color:var(--bs-teal);
+    font-size: 0.9rem;
+    line-height: 1rem;
+}
+
+.timeline-date{
+    font-size: small;
+}
+
+.card-title{
+    font-size:1.1rem;
+}
+
+#Footnote>p{
+    font-size: 0.7rem;
+}
+a{
+    text-decoration: none;
+}
+a:hover .arrow-sym{
+    display:inline-flex;
+    translate: 5px -5px;
+    transition: 0.2s ease-in;
+    
+}
+
+#socials div a{
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+    color: var(--bs-light-text-emphasis);
+
+    &:hover{
+        color:white;
+        text-shadow: 10px whitesmoke;
+    }
+}
+
+#About p{
+    font-size: 1rem;
+}
+
