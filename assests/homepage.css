@@ -14,16 +14,16 @@ a{
     line-height: 2rem;
 }
 
-li{
-    list-style: none;
-    >a{
-        list-style: none;
-        font-size: 0.9rem;
-        color: var(--bs-light-text-emphasis);
-        &:hover{
-            color:white;
-        }
+.innerlink{
+  font-size: 0.8rem;
+  font-weight: 600;
+  &:hover{
+    &::before{
+      content: "—";
     }
+    text-shadow: 2px 2px 10px aqua;
+    color:white;
+  }
 }
 
 p{
@@ -44,12 +44,13 @@ h1{
     padding:0;
 }
 
-.active::before{
-    content: "—";
-}
 
 .active{
     color:white;
+    &::before{
+      content: "—";
+  }
+  transition-duration: 1s;   
 }
 
 .card:hover{
@@ -107,7 +108,7 @@ a:hover .arrow-sym{
 
     &:hover{
         color:white;
-        text-shadow: 10px whitesmoke;
+        text-shadow: 2px 2px 10px aqua;
     }
 }
 
