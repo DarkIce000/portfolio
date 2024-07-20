@@ -1,17 +1,6 @@
 @import "bootstrap/bootstrap.css";
 @import url('font/web/inter.css');
 
-body{
-    font-family: InterVariable;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    align-content:center;
-    justify-content: center;
-    height:100vh;
-    width:100vw;
-    line-height: 1.1rem;
-}
 
 a{
     text-decoration: none;
@@ -64,11 +53,11 @@ h1{
 }
 
 .card:hover{
-    background: rgba(123, 127, 135, 0.203);
+    background: rgba(123, 127, 135, 0.128);
     border-color: rgba(0, 0, 0, 0.216);
     border-top-color: rgba(255, 255, 255, 0.093);
     box-shadow:4px rgba(20, 20, 20, 0.403);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(5.2px);
     color: var(--bs-teal);
 }
@@ -126,3 +115,114 @@ a:hover .arrow-sym{
     font-size: 1rem;
 }
 
+body{
+    font-family: InterVariable;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    align-content:center;
+    justify-content: center;
+    line-height: 1.1rem;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    background-clip: content-box;
+    min-height: 100vh;
+}
+
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* overflow:scroll;
+} */
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* width: 100%;
+  height: 100%; */
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+.star {
+  --star-color: var(--primary-color);
+  --star-tail-length: 6em;
+  --star-tail-height: 2px;
+  --star-width: calc(var(--star-tail-length) / 6);
+  --fall-duration: 15s;
+  --tail-fade-duration: var(--fall-duration);
+  position: absolute;
+  top: var(--top-offset);
+  left: 0;
+  width: var(--star-tail-length);
+  height: var(--star-tail-height);
+  color: var(--star-color);
+  background: linear-gradient(45deg, currentColor, transparent);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 6px currentColor);
+  transform: translate3d(104em, 0, 0);
+  animation: fall var(--fall-duration) var(--fall-delay) linear infinite, tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+}
+@media screen and (max-width: 750px) {
+  .star {
+    animation: fall var(--fall-duration) var(--fall-delay) linear infinite;
+  }
+}
+.star:nth-child(1) {
+  --star-tail-length: 6.44em;
+  --top-offset: 14.91vh;
+  --fall-duration: 10.95s;
+  --fall-delay: 3.927s;
+}
+.star:nth-child(2) {
+  --star-tail-length: 5.91em;
+  --top-offset: 54.89vh;
+  --fall-duration: 9.926s;
+  --fall-delay: 0.099s;
+}
+
+.star::before, .star::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: calc(var(--star-width) / -2);
+  width: var(--star-width);
+  height: 100%;
+  background: linear-gradient(45deg, transparent, currentColor, transparent);
+  border-radius: inherit;
+  animation: blink 2s linear infinite;
+}
+.star::before {
+  transform: rotate(45deg);
+}
+.star::after {
+  transform: rotate(-45deg);
+}
+
+@keyframes fall {
+  to {
+    transform: translate3d(-30em, 0, 0);
+  }
+}
+@keyframes tail-fade {
+  0%, 50% {
+    width: var(--star-tail-length);
+    opacity: 1;
+  }
+  70%, 80% {
+    width: 0;
+    opacity: 0.4;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    opacity: 0.6;
+  }
+}
