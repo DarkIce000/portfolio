@@ -59,7 +59,7 @@ h1{
     border-top-color: rgba(255, 255, 255, 0.093);
     box-shadow:4px rgba(20, 20, 20, 0.403);
     backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(3px);
     color: var(--bs-teal);
 }
 

@@ -15,14 +15,14 @@
 
     <div class="container-xxl" style="width:95vw; height:90vh;">
 
-        <div class="row w-100 h-100 m-0 align-items-center: justify-content-center">
+        <div class="row m-0 justify-content-center" id="main-row">
 
             <div class="stars">
                 <div class="star"></div>
                 <div class="star"></div>
             </div>
             <!------------------------------------------------------------- personal-info ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-            <div class="col-lg-4 col-sm-12 d-flex flex-column justify-content-between">
+            <div class="col-lg-4 d-flex flex-column justify-content-between">
                 <div class="row" id="personal-info">
                     <div class="col-12">
 
@@ -42,7 +42,7 @@
                 </div>
                 <!------------------------------------------------------------- social handles ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
                 <div class="row" id="socials">
-                    <div class="col-12 my-3">
+                    <div class="col-12  col-sm-12 my-3">
                         <a href="https://linkedin.com/in/kumaraarav/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/darkice000/" target="_blank"><i class="fa-brands fa-github"></i></a>
                         <a href="https://youtube.com/@kumaraarav-dev" target="_blank"><i class="fa-brands fa-youtube"></i></a>
@@ -343,6 +343,13 @@
 
         </div>
     </div>
+
+    <script>
+        // fix for annoying top 
+        const width = window.innerWidth;
+        const row = document.getElementById('main-row')
+        if(width>960) row.classList.add("h-100");
+    </script>
 
     <script src="assests/bootstrap/bootstrap.bundle.js"></script>
     <script src="https://kit.fontawesome.com/e183061512.js" crossorigin="anonymous"></script>
