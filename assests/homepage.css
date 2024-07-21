@@ -1,6 +1,11 @@
 @import "bootstrap/bootstrap.css";
 @import url('font/web/inter.css');
 
+@media screen and (min-width:960px){
+  #main-row{
+    height:100%;
+  }  
+}
 
 a{
     text-decoration: none;
