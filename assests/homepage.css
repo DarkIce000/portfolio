@@ -67,6 +67,7 @@ h1{
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     color: var(--bs-teal);
+    transition: 0.6s ease-out;
 }
 
 .card-title:hover span{
